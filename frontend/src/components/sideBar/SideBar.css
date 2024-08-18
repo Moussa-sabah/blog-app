@@ -1,0 +1,69 @@
+.sidebar {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-title {
+  color: var(--dark-color);
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  padding: 5px 0;
+  width: 80%;
+  text-align: center;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 70%;
+  gap: 20px;
+}
+
+.sidebar-link {
+  color: var(--white-color);
+  background-color: var(--gray-color);
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 20px;
+  transition: all 0.2s;
+}
+
+
+.sidebar-link:hover {
+  background-color: var(--pumpkin-color);
+  color: var(--white-color);
+
+}
+
+
+
+/* RESPONSEVE */
+
+@media(max-width:990px) {
+  .sidebar {
+    width: 80%;
+  }
+}
+
+@media(max-width:600px){
+  .sidebar{
+    margin-bottom: 30px;
+  }
+  .sidebar-title{
+    font-size: 20px;
+    width: 60%;
+  }
+  .sidebar-links {
+    width: 100%;
+  }
+  .sidebar-link{
+    margin: 7px 0;
+  }
+}

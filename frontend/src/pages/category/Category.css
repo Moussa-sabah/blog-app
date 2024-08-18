@@ -1,0 +1,36 @@
+.category-page {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-height: calc(100vh - 156.4px);
+}
+
+
+
+
+.category-page-title,.posts-not-found,.go-link{
+  color: var(--dark-color);
+  border-bottom: 3px solid var(--dark-color);
+  padding-bottom: 5px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-left: 40px;
+  text-transform: capitalize;
+  width: max-content;
+}
+
+
+
+.go-link{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-size: 20px;
+  border: none;
+  padding: 5px 10px;
+}
+
+.post-list-category-page {
+  padding: 30px 40px;
+  width: 100%;
+}

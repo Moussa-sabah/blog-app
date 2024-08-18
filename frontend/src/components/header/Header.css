@@ -1,0 +1,177 @@
+.header {
+  background-color: var(--blue-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-color);
+  padding: 20px 30px;
+}
+
+/*  HEADER LEFT */
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 35px;
+}
+
+.header-logo strong {
+  text-decoration: underline;
+}
+
+
+
+.header-menu {
+  display: none;
+}
+
+
+
+
+/* NAVBAR */
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  font-size: 22px;
+  font-weight: 600;
+
+}
+
+.nav-link {
+  display: flex;
+  gap: 6px;
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+
+
+/* HEADER RIGHT */
+
+.header-right {
+  display: flex;
+  gap: 15px;
+}
+
+.header-right-link {
+  padding: 8px 10px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  background-color: var(--white-color);
+  color: var(--blue-color);
+  font-weight: 600;
+
+}
+
+
+.header-right-user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.header-right-userName {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.header-right-userImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+.header-right-dropDown {
+  position: absolute;
+  right: 50%;
+  top: 100%;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+  gap: 10px;
+  background-color: var(--white-color);
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.header-dropDown-item {
+  display: flex;
+  gap: 10px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* RESPONSEVE */
+
+
+@media(max-width:990px) {
+
+  .header {
+    position: relative;
+  }
+
+
+  .header-menu {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: var(--blue-color);
+    padding: 10px 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.4s;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 30px;
+  }
+
+}
+
+
+
+@media(max-width:600px) {
+  .header {
+    padding: 15px 10px;
+  }
+
+  .header-left {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    font-size: 17px;
+    padding-left: 10px;
+  }
+
+  .header-right {
+    gap: 9px;
+  }
+
+  .header-right-link {
+    font-size: 14px;
+    padding: 4px 5px;
+    gap: 5px;
+  }
+
+}

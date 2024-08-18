@@ -1,0 +1,27 @@
+.add-comment {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.add-comment-form {
+  width: 100%;
+  display: flex;
+}
+
+.add-comment-input {
+  flex: 9;
+  padding: 15px;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #b1b1b1;
+  font-size: 18px;
+}
+
+.add-comment-btn {
+  flex: 1;
+  font-size: 18px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  padding: 10px 20px;
+}

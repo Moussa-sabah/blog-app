@@ -1,0 +1,30 @@
+
+
+.not-found{
+  height: calc(100vh - 152.8px);  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.N404{
+color: var(--red-color);
+font-size: 60px;
+font-weight: bold;
+}
+
+.not-found-title{
+  color: var(--dark-color);
+  font-size: 40px;
+}
+
+.not-found-link{
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 40px;
+  border-radius: 5px;
+}

@@ -1,0 +1,181 @@
+
+/* Users Table */
+
+.users-table-page {
+  display: flex;
+  height: calc(100vh - 156.4px);
+}
+
+.users-table {
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  gap: 25px;
+  overflow-y: scroll;
+}
+
+.table-title {
+  font-size: 30px;
+  color: var(--gray-color);
+  border-bottom: 3px solid var(--gray-color);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  font-size: 18px;
+}
+
+th {
+  padding: 10px 20px;
+  text-align: start;
+  border: 1px solid #b1b1b1;
+}
+
+
+thead th:nth-child(1){
+  width: 150px;
+}
+
+thead th:nth-child(4){
+  width: 330px;
+  text-align: center;
+}
+tbody {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+
+tbody tr:nth-child(odd) {
+  background-color: var(--white-color);
+}
+
+
+td {
+  border: 1px solid #b1b1b1;
+  padding: 10px 20px;
+}
+
+.image-and-name{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-image{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.btns {
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+}
+
+.delete-btn,.view-btn{
+  padding: 7px 15px;
+
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  color: var(--white-color);
+  background-color: var(--red-color);
+}
+
+.view-btn{
+  background-color: var(--green-color);
+}
+
+
+
+/* Posts Table */
+
+.posts-table-page {
+  display: flex;
+  height: calc(100vh - 156.4px);
+}
+
+.posts-table {
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  gap: 25px;
+  overflow-y: scroll;
+}
+
+
+/* Categories Taable */
+
+.categories-table-page {
+  display: flex;
+  height: calc(100vh - 156.4px);
+}
+
+.categories-table {
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  gap: 25px;
+  overflow-y: scroll;
+}
+
+
+thead .td-category{
+  width: 400px;
+  text-align: center;
+}
+
+
+/* Comments Table */
+
+.comments-table-page {
+  display: flex;
+  height: calc(100vh - 156.4px);
+}
+
+.comments-table {
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  gap: 25px;
+  overflow-y: scroll;
+}
+
+
+@media(max-width:900px){
+  .table-title {
+    font-size: 20px;
+  }
+   thead{
+    font-size: 13px;
+   }
+   tbody{
+    font-size: 13px;
+   }
+   .image-and-name{
+    font-size: 13px;
+   }
+   .btns{
+    font-size: 10px;
+   }
+   .delete-btn,.view-btn{
+    padding: 5px;
+   }
+
+}

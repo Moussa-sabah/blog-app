@@ -1,0 +1,23 @@
+.posts-page{
+  display: flex;
+  padding: 40px 30px;
+  min-height: calc(100vh - 156.4px);
+}
+
+
+
+
+@media(max-width:990px){
+  .posts-page{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media(max-width:600px){
+  .posts-page{
+    padding: 0;
+  }
+}
+
